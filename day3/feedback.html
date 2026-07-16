@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Feedback Form</title>
+    </head>
+    <body>
+        <div style="width:500px; border: 1px solid black; padding: 50px; margin: 0 auto;">
+            <h1 align="center">Feedback Form</h1>
+            <form action="" mehtod="post"> 
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter Name" required><br>
+                <label for="department">Department:</label>
+                <select id="department" name="department">
+                    <option value="cardiologist">Cardiologist</option>
+                    <option value="dental">Dental</option>
+                    <option value="gynacologist">Gynacologist</option>
+                    <option value="neurologist">Neurologist</option>
+                </select><br>
+                <label for="DName">Doctor Name:</label>
+                <input type="text" id="DName" name="DName" placeholder="Enter Doctor Name" required><br>
+                <label for="Designation">Designation:</label>
+                <input type="text" id="Designation" name="Designation" placeholder="Enter Designation of doctor" required><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="65" maxlength="200"></textarea><br>
+                <button type="submit" style="width: 500px;height: 40px;" align="center">Submit  </button><br>
+                
+            </form>
+    </body>
+</html>
