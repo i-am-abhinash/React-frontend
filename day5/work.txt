@@ -1,0 +1,4 @@
+i need to create a website with some navigation bar without any search bars and also add some scrollable images like the one in the home.html 
+and also i need to include some products such as amazon or any e commerce with small icons and names and price in the name of categoris
+i need to include the template image below the product deatils 
+and i need to give some more products 
