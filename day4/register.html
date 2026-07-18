@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Register</title>
+        <style>
+            body{
+                background-color: #0F172A;
+            }
+            div{
+                background-color:  #1E293B;
+                color:aqua;
+                border-color: rgb(210, 236, 236);
+                padding:10px;
+                border-radius: 5%;;
+            }
+            div select{
+                background-color: #0F172A;
+                color:aqua;
+                border-color: lightgray;
+                text-align: center;
+                width:200px;
+                height:25px;
+            }
+            div input:not([type="radio"]){
+                background-color: #0F172A;
+                width:250px;
+                height:15px;
+                margin:0 auto;
+                padding:10px;
+            }
+            button{
+                width: 255px;
+                height: 40px;
+                background-color: aqua;
+                color: black;
+                margin:0 auto;
+            }
+            button:hover{
+                background-color: rgb(24, 56, 56);
+                color: aqua;
+            }
+            form{
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="width:500px; border:1px solid black; margin: 0 auto">
+            <h1 align="center">Register Page</h1>
+            <form action="" method="post">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Your name" required align:"center";><br>
+                </div>
+                <div>
+                    <label for="Email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter Your Email Id" required><br>
+                </div>
+                <div>
+                    <label for="Age">Age:</label>
+                    <input type="Age" id="Age" name="Age" placeholder="Age" required min="18" max="50"><br>
+                </div>
+                <div>
+                    <label for="Phone">Name:</label>
+                    <input type="tel" id="Phone" name="name" placeholder="Enter Your Phone number" required><br>
+                </div>
+                <div>
+                    <label for="gender">Gender:</label>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label><br>
+                </div>
+                <div>
+                    <label for="country">Country:</label>
+                    <select id="country">
+                        <option value="india">India</option>
+                        <option value="usa">USA</option>
+                        <option value="uk">UK</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                    </select><br>
+                </div>
+                <div>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Enter Password" required><br>
+                </div>
+                <div>
+                    <label for="cpassword">Confirm Password:</label>
+                    <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required><br>
+                </div>
+                <button type="submit" style="width: 450px;height: 40px;" align="center">Register</button>
+            </form>
+        </div>
+    </body>
+</html>
