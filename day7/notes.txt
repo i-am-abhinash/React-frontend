@@ -1,0 +1,95 @@
+<!------------------------------- Functions ---------------------------------!>
+
+//function
+A function defines inside the expression and assigned to the varible. these are not hoisted
+// example code
+const calcSquare = sunction(num){
+    return num*num;
+}
+
+//Arrow Funtion
+-> introduces in ES6, arrow function offer a highly concise suntax and do not bind their own this context.
+ //example code 
+    const add = (a,b)=>{return a+b;};
+    //implicit return(single line shorthand)
+    const multiply = (a,b)=> a*b;
+
+
+//Anonymous function
+-> A function with out any specific name is calld as a anonymous fucntion 
+// Example code 
+setTimeout(
+    function(){
+        console.log("this runs ater 1 second);
+    },1000
+);
+
+//Immediatly ivoked function expressions
+->a Functions that runs Immediatly when the browser or  runtime triggers it
+//example code
+(function(){const localSecret = "secure Scope";
+console.log("IIFE Loaded!");})();
+
+<!-------------------------------- Operators --------------------------------------!>
+Arthimatic Operators(+, -, /, %, *)
+
+Assinment Operators(=, +=, -=, /=, *=, %=)
+
+Comparision Operators(==, ===, !=, !==, >, <, >=, <=)
+
+Logical Operators(&&, ||, !)
+
+Ternary Operator(? :)
+
+Nullish Coalescing(??)
+
+<!-------------------------------- Loops ----------------------------------------!>
+
+Loops
+-> loops are used when we need the elements are the functions in the loop have to be run or executed until some condition becomes false
+ // For loop
+    -> the for loop is used when you know how many times you want to repeat a block of code
+    // example 
+    for(let i = 0; i <= 5; i++){
+        console.log(i);
+    }
+
+// While Loops
+    -> the whille loop is  executed as long as the codition is true. it is useful when the number of iterations is not known in advance
+    // example code
+    let i = 1;
+    while(i <= 5){
+        console.log(i);
+        i++;
+    }
+
+// Do while
+    -> the do while loop executes the code atleast once even if the codition is initially false.
+    //example code
+    let i =1;
+    do{
+        console.log(i);
+        i++;
+    }while(i <= 5);
+
+// for..of loop
+    -> for..of loop is used to iterate over iterable objects such as arays and strings
+    ->it is a simple and readable way to access each element without using an index
+    //example code
+    const fruits =["Apple","banana","Mango"];
+    for(const fruit of fruits){
+        console.log(fruit);
+    }
+
+//For..in loop
+    -> for..in loop is used to iterate over the properties of an objects
+    //example code
+    const student = {
+        name :"Pavan",
+        age : 22,
+        course :"React"
+    };
+    
+    for(const key in student){
+        console.log(key+":"+student[key]);
+    }
