@@ -1,0 +1,5 @@
+selectQuery()
+selectQueryAll()
+getElementById()
+getElementByElement()
+getElementByClass()
