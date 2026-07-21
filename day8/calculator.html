@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <style>
+            button{
+                width:150px;
+                height: 70px;
+            }
+            .form-control{
+                width:450px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container" style="width:500px; margin:0 auto; border:1px solid black; padding:10px;">
+            <div class="row">
+                <div class="col-md-8">
+                    <section>
+                        <h1 class="text-center">Calculator</h1>
+                    </section>
+                    <section>
+                        <form action="" method="post" class="col-md-5">
+                            <div class="md-3">
+                                <label for="name" class="form-label">First Number</label>
+                                <input type="text" class="form-control" id="i1">
+                            </div>
+                            <div class="md-3">
+                                <label for="name" class="form-label">Second Number</label>
+                                <input type="text" class="form-control" id="i2">
+                            </div>
+                            <div style="width:500px; padding:10px 5px;" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary" onclick="add()">+</button>
+                                <button type="button" class="btn btn-primary" onclick="sub()">-</button>
+                                <button type="button" class="btn btn-primary" onclick="div()">/</button>
+                            </div>
+                            <div style="width:500px; padding:10px 5px;" aria-label="Basic example">
+                                <button type="button" class="btn btn-primary" onclick="mul()">*</button>
+                                <button type="button" class="btn btn-primary" onclick="mod()">%</button>
+                                <button type="button" class="btn btn-primary" onclick="exp()">**</button>
+                            </div>
+                            <div id="result">
+                            </div>
+                        </form>
+                    </section>
+                </div>
+            </div>
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script>
+            function add(){
+                let a = Number(document.getElementById('i1').value);
+                let b = Number(document.getElementById('i2').value);
+                let add = a+b;
+                document.getElementById('result').innerHTML=`<h4><b>Addition:</b>${add}<h4>`;
+            }
+            function sub(){
+                let a = Number(document.getElementById('i1').value);
+                let b = Number(document.getElementById('i2').value);
+                let sub = a-b;
+                document.getElementById('result').innerHTML=`<h4><b>Subtraction:</b>${sub}<h4>`;
+            }
+            function div(){
+                let a = Number(document.getElementById('i1').value);
+                let b = Number(document.getElementById('i2').value);
+                let div = a/b;
+                document.getElementById('result').innerHTML=`<h4><b>Division:</b>${div}<h4>`;
+            }
+            function mul(){
+                let a = Number(document.getElementById('i1').value);
+                let b = Number(document.getElementById('i2').value);
+                let mul = a*b;
+                document.getElementById('result').innerHTML=`<h4><b>Multiplication:</b>${mul}<h4>`;
+            }
+            function mod(){
+                let a = Number(document.getElementById('i1').value);
+                let b = Number(document.getElementById('i2').value);
+                let mod = a%b;
+                document.getElementById('result').innerHTML=`<h4><b>Modulus:</b>${mod}<h4>`;
+            }
+            function exp(){
+                let a = Number(document.getElementById('i1').value);
+                let b = Number(document.getElementById('i2').value);
+                let exp = a**b;
+                document.getElementById('result').innerHTML=`<h4><b>Exponential:</b>${exp}<h4>`;
+            }
+        </script>
+    </body>
+</html>
