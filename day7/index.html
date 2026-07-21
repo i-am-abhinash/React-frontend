@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewpoint" content="width">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            let student={
+                name :"jhon doe",
+                age :20,
+                branch : "Software Engineering",
+                major :"Artificial intelligence",
+            };
+            console.log(student);
+            console.log(student.age);
+            console.log(student.branch);
+            console.log(student.major);
+            //Functions
+            function name(){
+                console.log("Name: "+student.name);
+            }
+            name();
+
+            //Anonymous Function
+            let sum =(x,y) =>{
+                return x+y;
+            }
+            console.log(sum(10,15));
+            <!-- operators-->
+            let login = 25;
+            let message = login ? "Welcome Back" : "Please Log in";
+            console.log(message);
+            
+            //For loop
+            for(let i = 0; i<=10; i++){
+                if(i%2==0){
+                    console.log(i);
+                }
+            }
+
+            //For..of loop
+            let mobile = ['samsung','nokia','apple','realme'];
+            for(const mob of mobile){
+                console.log(mob);
+            }
+
+            //for..in loop
+            for(const key in student){
+                console.log(student[key]);
+            }
+            </script>
+    </body>
+</html>
