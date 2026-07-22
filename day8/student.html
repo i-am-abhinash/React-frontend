@@ -45,11 +45,11 @@
                             <div class="md-3">
                                 <label for="name" class="form-label">Subject 6</label>
                                 <input type="text" class="form-control" id="sub6">
-                            </div>
+                            </div >
                             <button type="button" id="button" class="btn btn-primary" onclick="Calculate()">Calculate</button>
                         </form>
-                        <div id="result">
-
+                        <div id="result" style="width:450px; border:1px solid black; padding:10px 5px;">
+                            <h3>Student Result:</h3>
                         </div>
                     </section>
                 </div>
@@ -131,7 +131,6 @@
                 }
                 result = pass ? "pass" : "Fail";
                 document.getElementById("result").innerHTML=`
-                <h3>Student Result</h3>
                 <p><b>Name:</b>${studentName}</p>
                 <p><b>Sum:</b>${sum}</p>
                 <p><b>Avg:</b>${avg}</p>

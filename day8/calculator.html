@@ -10,12 +10,15 @@
                 height: 70px;
             }
             .form-control{
-                width:450px;
+                width:463px;
+            }
+            #button{
+                width:460px;
             }
         </style>
     </head>
     <body>
-        <div class="container" style="width:500px; margin:0 auto; border:1px solid black; padding:10px;">
+        <div class="container" style="width:500px; margin:0 auto; border:1px solid black; padding:10px; background-color: #0F172A; color:aliceblue;">
             <div class="row">
                 <div class="col-md-8">
                     <section>
@@ -41,7 +44,10 @@
                                 <button type="button" class="btn btn-primary" onclick="mod()">%</button>
                                 <button type="button" class="btn btn-primary" onclick="exp()">**</button>
                             </div>
-                            <div id="result">
+                            <div>
+                                <button class="btn btn-primary clear" id="button" onclick="clear()">Clear</button>
+                            </div>
+                            <div id="result" >
                             </div>
                         </form>
                     </section>
@@ -85,6 +91,9 @@
                 let b = Number(document.getElementById('i2').value);
                 let exp = a**b;
                 document.getElementById('result').innerHTML=`<h4><b>Exponential:</b>${exp}<h4>`;
+            }
+            function clear(){
+                document.getElementById('result').innerHTML="Result : 0";
             }
         </script>
     </body>
